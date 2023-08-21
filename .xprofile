@@ -1,0 +1,14 @@
+#Restore wallpaper
+nitrogen --restore &
+
+#Startup compositor
+picom --conf ~/.config/picom/picom.conf &
+
+#Select polish layout
+setxkbmap pl
+
+#Set second monitor as primary
+xrandr --output HDMI-1 --primary
+
+#Startup polybar
+$HOME/.config/polybar/launch.sh 
